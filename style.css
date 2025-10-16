@@ -148,3 +148,118 @@ body {
   border-radius: 50%;
   border: 22px solid rgba(240, 214, 165, 0.15);
 }
+/* ==== RESPONSIVE MODE (untuk HP & layar kecil) ==== */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .card {
+    flex-direction: column; /* ubah jadi vertikal */
+    width: 100%;
+    max-width: 400px; /* biar pas di HP */
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .left {
+    display: none; /* sembunyikan gradasi miring di HP */
+  }
+
+  .card-content {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .photo {
+    position: static;
+    transform: none;
+    margin: 20px auto 0 auto;
+    width: 120px;
+    height: 120px;
+    border: 4px solid #2d2929;
+  }
+
+  .card::after {
+    display: none; /* sembunyikan hiasan lingkaran di kanan */
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+}
+/* ==== RESPONSIVE MODE (untuk HP & layar kecil) ==== */
+@media (max-width: 768px) {
+  body {
+    background: #eaeaea;
+    padding: 20px;
+    height: auto;
+  }
+
+  .card {
+    flex-direction: column; /* ubah jadi vertikal */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 25px 20px 40px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .left {
+    display: none; /* sembunyikan gradasi miring */
+  }
+
+  .card-content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .brand {
+    font-size: 13px;
+    color: #e2d6b8;
+  }
+
+  .name {
+    font-size: 22px;
+    color: #f0d6a5;
+  }
+
+  .title {
+    font-size: 13px;
+    color: #cfcfcf;
+    margin-bottom: 18px;
+  }
+
+  .info p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .photo {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 110px;
+    border: 4px solid #2d2929;
+    box-shadow: 0 0 0 6px rgba(240, 214, 165, 0.15);
+  }
+
+  .card::after {
+    display: none; /* hapus hiasan besar kanan */
+  }
+
+  .btn {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+}
